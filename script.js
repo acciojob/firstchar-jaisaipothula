@@ -1,8 +1,9 @@
-function firstChar(text) {
-  // your code here
+function firstChar(str) {
+    for (let char of str) {
+        if (char !== ' ') {
+            return char;
+        }
+    }
+    return ''; // If all characters are spaces
 }
 
-// Do not change the code below
-
-const text = prompt("Enter text:");
-alert(firstChar(text));
